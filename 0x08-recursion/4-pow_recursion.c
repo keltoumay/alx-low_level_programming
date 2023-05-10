@@ -6,7 +6,8 @@
  * @y: The power to raise x to.
  *
  * This function takes a base value x and a power value y, and calculates the
- * result of x raised to the power of y using recursion. It works by recursively
+ * result of x raised to the power of y using recursion.
+ * It works by recursively
  * multiplying x by itself y - 1 times until y equals 0, at which point the
  * function returns 1.
  *
