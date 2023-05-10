@@ -24,11 +24,6 @@ int is_prime_number(int n)
  */
 int recursive_prime(int n, int i)
 {
-/* The algorithm checks if n is divisible by i.
- * If it is, then n is not a prime number.
- * If it is not, then it checks the next number less than i.
- * If all numbers less than i have been checked, then n is prime.
- */
 
 	if (i == 1)
 		return (1);
