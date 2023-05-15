@@ -18,10 +18,9 @@ for (c = 0; s[c] != '\0'; c++)
 
 {
 /* if the character is a space, reset the flag to indicate end of a word*/
+
 if (s[c] == ' ')
 flag = 0;
-/* if the current character is not a space and the flag is not set,
- * increment the word counter and set the flag*/
 
 else if (flag == 0)
 {
