@@ -5,6 +5,7 @@
  * @array: pointer to the array
  * @size: number of elements in the array
  * @cmp: pointer to the comparison function
+ * Return: 0
  *
  * Description: This function searches for an integer in the given array
  * by applying the comparison function to each element. It
@@ -15,15 +16,15 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-int i;
+int i = 0;
 
-if (array == NULL || size <= 0 || cmp == NULL)
-return (-1);
+if (array && size && cmp)
+while (i < size)
 
-for (i = 0; i < size; i++)
 {
 if (cmp(array[i]))
 return (i);
+i++;
 }
 return (-1);
 }
