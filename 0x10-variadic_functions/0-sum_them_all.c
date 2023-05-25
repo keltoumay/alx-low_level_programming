@@ -11,19 +11,17 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-if (n == 0)
-return 0;
+/* Initialize the variable argument list*/
+va_list ap;
+unsigned int i, sum = 0;
 
-int sum = 0;
-va_list args;
-va_start(args, n);
+va_start(ap, n);
 
-for (unsigned int i = 0; i < n; ++i)
-{
-int value = va_arg(args, int);
-sum += value;
-}
+for (i = 0; i < n; i++)
+/* Access each argument and add it to the sum*/
+sum += va_arg(ap, int);
+/* Clean up the variable argument list*/
+va_end(ap);
 
-va_end(args);
-return sum;
+return (sum);
 }
