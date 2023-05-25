@@ -18,7 +18,8 @@ int sum = 0;
 va_list args;
 va_start(args, n);
 
-for (unsigned int i = 0; i < n; ++i) {
+for (unsigned int i = 0; i < n; ++i)
+{
 int value = va_arg(args, int);
 sum += value;
 }
