@@ -9,14 +9,14 @@
  */
 size_t list_len(const list_t *h)
 {
-size_t count = 0;
+size_t nodecount = 0;
 
 /* Traverse the list and increment count for each element*/
 while (h != NULL)
 {
-count++;
+nodecount++;
 h = h->next;
 }
 
-return (count);
+return (nodecount);
 }

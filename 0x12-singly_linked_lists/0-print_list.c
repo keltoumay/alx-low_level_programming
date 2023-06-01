@@ -10,7 +10,7 @@
  */
 size_t print_list(const list_t *h)
 {
-size_t count = 0;
+size_t nodecount = 0;
 
 /* Traverse the list and print each element*/
 while (h != NULL)
@@ -21,9 +21,9 @@ printf("[0] (nil)\n");
 else
 printf("[%ld] %s\n", h->len, h->str);
 
-count++;
+nodecount++;
 h = h->next;
 }
 
-return (count);
+return (nodecount);
 }
