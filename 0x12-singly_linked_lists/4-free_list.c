@@ -7,13 +7,13 @@
  */
 void free_list(list_t *head)
 {
-    if (head == NULL)
-        return;
+if (head == NULL)
+return;
 
-    /* Recursively free the rest of the list */
-    free_list(head->next);
+/* Recursively free the rest of the list */
+free_list(head->next);
 
-    /* Free the current node */
-    free(head->str);
-    free(head);
+/* Free the current node */
+free(head->str);
+free(head);
 }
