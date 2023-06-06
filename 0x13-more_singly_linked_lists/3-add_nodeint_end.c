@@ -16,7 +16,7 @@ listint_t *new_node, *temp;
 /* Allocate memory for the new node */
 new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
-return NULL;
+return (NULL);
 
 /* Set the value of the new node */
 new_node->n = n;
