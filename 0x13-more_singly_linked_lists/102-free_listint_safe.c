@@ -11,15 +11,12 @@ size_t free_listint_safe(listint_t **h)
 {
 listint_t *slow, *fast;
 size_t count = 0;
-
 slow = *h;
 fast = *h;
-
 while (slow && fast && fast->next)
 {
 slow = slow->next;
 fast = fast->next->next;
-
 /* Check if there's a loop */
 if (slow == fast)
 {
@@ -36,12 +33,10 @@ count++;
 *h = NULL;
 return (count);
 }
-
 free(*h);
 count++;
 *h = slow;
 }
-
 /* No loop, free the list normally */
 while (*h)
 {
@@ -50,7 +45,6 @@ free(*h);
 count++;
 *h = slow;
 }
-
 return (count);
 }
 
