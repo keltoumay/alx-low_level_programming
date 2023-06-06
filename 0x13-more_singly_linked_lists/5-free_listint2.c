@@ -18,5 +18,5 @@ free(current);
 }
 
 /* Set the head to NULL */
-*head = (NULL);
+*head = NULL;
 }
