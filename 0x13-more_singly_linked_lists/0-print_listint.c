@@ -18,10 +18,10 @@ while (h != NULL)
 {
 /* Print the value of the current node */
 printf("%d\n", h->n);
-        
+
 /* Move to the next node */
 h = h->next;
-        
+
 /* Increment the count of nodes */
 count++;
 }
