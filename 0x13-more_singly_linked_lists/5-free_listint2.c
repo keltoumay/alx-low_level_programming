@@ -9,14 +9,14 @@ void free_listint2(listint_t **head)
 {
 listint_t *current;
 
-/* Traverse the list and free each node */
+if (head == NULL)
+return;
 while (*head != NULL)
 {
-current = *head;
-*head = (*head)->next;
-free(current);
+temp = (*head)->next;
+free(*head);
+*head = temp;
 }
-
 /* Set the head to NULL */
 *head = NULL;
 }
