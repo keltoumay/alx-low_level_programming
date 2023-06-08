@@ -21,5 +21,5 @@ count += flip & 1;
 flip >>= 1;
 }
 
-return count;
+return (count);
 }
