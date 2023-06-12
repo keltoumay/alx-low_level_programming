@@ -77,8 +77,7 @@ rd = read(frm, buf, 1024);
 t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 /* Copy file contents */
-do
-}
+do {
 if (frm == -1 || rd == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
