@@ -1,11 +1,11 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * create_file - Create  file.
- * @filename: pointer
- * @text_content: pointer
+ * @filename: pointer.
+ * @text_content: pointer.
  *
- * Return: If the function fails -1
+ * Return: If the function fails -1.
  */
 
 int create_file(const char *filename, char *text_content)
