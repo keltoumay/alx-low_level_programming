@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *  * append_text_to_file - function that convert
- *   * @filename: a
- *    * @text_content: a
- *     * Return: Always 0.
- *      */
+ * append_text_to_file - function that convert
+ * @filename: a
+ * @text_content: a
+ * Return: Always 0.
+ */
 
 int append_text_to_file(const char *filename, char *text_content)
 {
